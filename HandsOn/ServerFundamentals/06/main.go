@@ -1,5 +1,4 @@
 package main
-
 import (
 	"io"
 	"log"
@@ -19,7 +18,7 @@ func main() {
 		if err != nil {
 			log.Fatalln(err)
 		}
-		go serve(c) //Adding go in front makes it a go routine
+		go serve(c)
 	}
 }
 func serve(c net.Conn){
